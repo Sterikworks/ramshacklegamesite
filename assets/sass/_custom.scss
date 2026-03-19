@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(180deg, #030812 0%, #071021 45%, #0a1324 100%);
+  color: #dbe7f5;
+}
+
+main {
+  background: transparent;
+}
+
+.navbar {
+  backdrop-filter: blur(6px);
+  background-color: rgba(4, 9, 19, 0.9);
+  border-bottom: 1px solid #162339;
+}
+
+.nav-link {
+  color: #b8d8ff;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #11243e;
+  color: #ffffff;
+}
+
+#banner {
+  background: radial-gradient(circle at 50% -20%, #163763 0%, #0b1320 55%, #050a13 100%);
+}
+
+.highlights,
+.sections {
+  background: transparent;
+}
+
+.highlights h2,
+.sections h2,
+.section-header h1,
+.section-header h2 {
+  color: #dbe7f5;
+}
+
+.card {
+  background-color: #0b1729;
+  border: 1px solid #1d304b;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.card-title,
+.card-text,
+.card small {
+  color: #dbe7f5;
+}
+
+.highlights .card-title {
+  background-color: #12233b;
+  color: #6bc1ff;
+  text-transform: none;
+}
+
+.slogan {
+  color: #e9f3ff;
+}
+
+.slogan.bg-light {
+  background-color: #163152 !important;
+  color: #e9f3ff !important;
+  border: 1px solid #30567f;
+}
+
+.slogan:hover {
+  background-color: #254f7d !important;
+  color: #ffffff !important;
+}
+
+footer {
+  background-color: #040913;
+  border-top: 1px solid #1a2f4a;
+}
+
+footer a {
+  color: #9ecfff;
+}
+
+footer a:hover {
+  color: #ffffff;
+}

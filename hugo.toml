@@ -1,3 +1,36 @@
 baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'ramshackle game'
+languageCode = 'en-us'
+title = 'Ramshackle'
+theme = 'hugo-landing-sections'
+disableKinds = ['section', 'taxonomy']
+
+[author]
+name = 'Ramshackle Games'
+
+[params]
+author = 'Ramshackle Games'
+description = 'Ramshackle is a multiplayer sandbox game where you design a combat vessel from destructible parts and armor, then test it against player and AI opponents.'
+subtitle = 'Design your vessel. Test it in battle.'
+
+[params.banner]
+logo = 'ramshackle-logo.svg'
+logoSmallDevices = 'ramshackle-logo-small.svg'
+
+[params.menu]
+logo = 'ramshackle-mark.svg'
+logoSmallDevices = 'ramshackle-mark.svg'
+
+[params.og]
+image = 'ramshackle-og.svg'
+
+[params.repos]
+git = 'https://store.steampowered.com/app/3800200/Ramshackle/'
+
+[params.style]
+fontFamily = 'Trebuchet MS, Segoe UI, Arial, sans-serif'
+fontSize = '17px'
+textColor = '#dbe7f5'
+brandColor = '#0b1320'
+brandColor2 = '#4fb3ff'
+brandColor3 = '#040913'
+footerColor = '#8fa5be'
