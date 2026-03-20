@@ -23,8 +23,16 @@ main {
   color: #ffffff;
 }
 
+#banner-wrapper {
+  background-image: linear-gradient(rgba(4, 9, 19, 0.6), rgba(4, 9, 19, 0.85)), url("/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid #1a3c6d;
+}
+
 #banner {
-  background: radial-gradient(circle at 50% -20%, #163763 0%, #0b1320 55%, #050a13 100%);
+  background: transparent;
+  padding: 120px 30px;
 }
 
 .highlights,

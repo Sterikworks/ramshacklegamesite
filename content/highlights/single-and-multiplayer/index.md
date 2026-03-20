@@ -1,5 +1,6 @@
 +++
-title = "Single-player and Multiplayer"
+title = "Sandbox Combat"
 weight = 20
+img = "feature.png"
 +++
-Fight across varied terrain and multiple tech levels that represent different eras of military vehicle development. Test your designs against human opponents or AI vessels built by you and other players.
+Put your designs to the test against other player-driven and AI Vessels. Fight across varied terrain and tech levels. Encounter community-built vessels licensed to AI and battle them in various game modes.

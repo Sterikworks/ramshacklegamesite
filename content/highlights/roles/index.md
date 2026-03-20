@@ -1,5 +1,6 @@
 +++
-title = "Unique Roles"
+title = "Destructible Simulation"
 weight = 30
+img = "feature.png"
 +++
-Every vessel is a tradeoff between armor, firepower, mobility, and utility. Create heavily armored brawlers, fragile recon machines, or balanced all-rounders based on your combat plan.
+Every vessel is a tradeoff between armor, firepower, and mobility. Experience detailed internal damage modeling where a single penetrating hit into a critical component can disable or destroy your vessel.
