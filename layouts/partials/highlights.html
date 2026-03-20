@@ -1,0 +1,34 @@
+{{ $highlights_pages := where .Site.RegularPages "Section" "highlights" }}
+<div id="highlights" class="highlights py-5">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.GetPage "highlights" }}
+      {{ if ne .Title "" }}
+      <div class="col-12"><h2 class="text-center mb-5 fw-bold text-uppercase" style="letter-spacing: 3px;">{{ .Title }}</h2></div>
+      {{ end }}
+      {{ end }}
+      {{ range $highlights_pages }}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          {{ if .Params.img }}
+          {{ with .Resources.Match .Params.img }}
+          {{ range . }}
+          <img width="100%"
+               src="{{ .RelPermalink }}"
+               class="card-img-top"
+               alt="{{ .Title }}">
+          {{ end }}
+          {{ end }}
+          {{ end }}
+          <div class="card-body p-4">
+            <h3 class="card-title h4 mb-3" style="background: none; color: #4fb3ff; padding: 0;">{{ .Title }}</h3>
+            <div class="card-text">
+                {{ .Content }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

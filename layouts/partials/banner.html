@@ -1,26 +1,43 @@
 {{ $section_pages := where .Site.RegularPages "Section" "sections" }}
-<div id="banner-wrapper">
-  {{ if .Site.Params.banner.htmlBefore }}
-  {{ partial "custom-html-before-banner.html" . }}
-  {{ end }}
-  <div id="banner" class="container-fluid text-white text-center mb-5">
-    <h1>
-      <img src="{{ (printf "images/%s" .Site.Params.banner.logo) | relURL }}"
-           class="d-none d-lg-inline"
-           alt="{{ .Site.Title }} logo">
-      <img src="{{ (printf "images/%s" .Site.Params.banner.logoSmallDevices) | relURL }}"
-           class="d-inline d-lg-none"
-           alt="{{ .Site.Title }} small logo">
-    </h1>
-    <div class="mt-4 fs-4">
-      {{ range $section_pages }}
-      <a href="{{ .Permalink }}"
-         class="badge slogan bg-light text-dark px-3 py-2 mx-2 my-2">{{ .Params.slogan }}</a>
-      {{ end }}
+<div id="banner-wrapper" class="position-relative w-100">
+  <!-- Carousel Background -->
+  <div id="bannerCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" style="z-index: 0;">
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner5.png" | relURL }}");'></div>
+      </div>
+      <div class="carousel-item h-100">
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner2.png" | relURL }}");'></div>
+      </div>
+      <div class="carousel-item h-100">
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner4.png" | relURL }}");'></div>
+      </div>
+      <div class="carousel-item h-100">
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner1.png" | relURL }}");'></div>
+      </div>
     </div>
-    <h2 class="fs-4 mt-4">{{ .Site.Params.subtitle }}</h2>
+  </div>
+
+  <div id="banner" class="container-fluid text-white text-center mb-5 position-relative" style="z-index: 2;">
+    <h1>
+      <img src='{{ (printf "images/%s" .Site.Params.banner.logo) | relURL }}'
+           class="d-none d-lg-inline mb-4"
+           alt="{{ .Site.Title }} logo" style="max-height: 120px;">
+      <img src='{{ (printf "images/%s" .Site.Params.banner.logoSmallDevices) | relURL }}'
+           class="d-inline d-lg-none mb-4"
+           alt="{{ .Site.Title }} small logo" style="max-height: 80px;">
+    </h1>
+    
+    <div class="h2 text-uppercase mb-4 fw-bold" style="letter-spacing: 2px; color: #4fb3ff;">
+        Design. Test. Destroy.
+    </div>
+
+    <h2 class="fs-3 mt-4 fw-normal" style="max-width: 800px; margin: 0 auto; color: #dbe7f5;">
+        {{ .Site.Params.subtitle }}
+    </h2>
+
     <div class="mt-5">
-        <a href="{{ .Site.Params.repos.git }}" class="btn btn-primary btn-lg px-5 py-3 shadow-lg" target="_blank" style="background-color: #1a60db; border: none; font-weight: bold; border-radius: 50px;">
+        <a href="{{ .Site.Params.repos.git }}" class="btn btn-primary btn-lg px-5 py-3 shadow-lg" target="_blank" style="background-color: #1a60db; border: none; font-weight: bold; border-radius: 50px; font-size: 1.5rem;">
             <i class="bi bi-steam me-2"></i> WISHLIST ON STEAM
         </a>
     </div>

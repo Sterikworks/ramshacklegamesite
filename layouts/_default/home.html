@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "banner.html" . }}
+{{ partial "highlights.html" . }}
+{{ partial "sections.html" . }}
+{{ partial "about.html" . }}
+{{ if .Site.Params.mastodon.timeline }}
+{{ partial "mastodon-timeline.html" . }}
+{{ end }}
+{{ end }}
+{{ define "htmlAfterFooter" }}
+{{ if .Site.Params.htmlAfterFooter }}
+{{ partial "custom-html-after-footer.html" . }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,14 @@
+<div id="about" class="about py-5">
+  <div class="container">
+    <div class="row">
+      {{ range where .Site.RegularPages "Section" "about" }}
+      <div class="col-12 text-center">
+        <h2 class="mb-4">{{ .Title }}</h2>
+        <div class="lead mb-5 px-lg-5">
+            {{ .Content }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
