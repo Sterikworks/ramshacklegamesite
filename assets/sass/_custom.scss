@@ -3,6 +3,32 @@ body {
   color: #dbe7f5;
 }
 
+:root {
+  --bs-border-radius: 0;
+  --bs-border-radius-sm: 0;
+  --bs-border-radius-lg: 0;
+  --bs-border-radius-xl: 0;
+  --bs-border-radius-xxl: 0;
+  --bs-border-radius-pill: 0;
+}
+
+.btn,
+.card,
+.navbar,
+.navbar-toggler,
+.dropdown-menu,
+.form-control,
+.form-select,
+.input-group-text,
+.modal-content,
+.offcanvas,
+.alert,
+.badge,
+.pagination .page-link,
+iframe {
+  border-radius: 0 !important;
+}
+
 .navbar {
   backdrop-filter: blur(10px);
   background-color: rgba(4, 9, 19, 0.95);
@@ -28,9 +54,24 @@ body {
 
 #banner {
   background: transparent;
-  padding: 160px 30px 250px 30px;
+  padding: 160px 30px 220px 30px;
   position: relative;
   z-index: 2;
+}
+
+.steam-widget-section {
+  background: #040913;
+  position: relative;
+  z-index: 3;
+}
+
+.steam-widget {
+  display: block;
+  width: 100%;
+  max-width: 646px;
+  min-height: 190px;
+  border: 1px solid #1d304b;
+  margin: 0;
 }
 
 .highlights,
