@@ -22,10 +22,10 @@
     <h1>
       <img src='{{ (printf "images/%s" .Site.Params.banner.logo) | relURL }}'
            class="d-none d-lg-inline mb-4"
-           alt="{{ .Site.Title }} logo" style="max-height: 120px;">
+         alt="{{ .Site.Title }} logo" style="max-height: 270px;">
       <img src='{{ (printf "images/%s" .Site.Params.banner.logoSmallDevices) | relURL }}'
            class="d-inline d-lg-none mb-4"
-           alt="{{ .Site.Title }} small logo" style="max-height: 80px;">
+         alt="{{ .Site.Title }} small logo" style="max-height: 180px;">
     </h1>
     
     <div class="h2 text-uppercase mb-4 fw-bold" style="letter-spacing: 2px; color: #4fb3ff;">
