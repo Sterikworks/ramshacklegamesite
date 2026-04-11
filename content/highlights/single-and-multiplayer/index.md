@@ -1,6 +1,6 @@
 +++
-title = "Sandbox Combat"
+title = "Community & Servers"
 weight = 20
 img = "feature.png"
 +++
-Put your designs to the test against other player-driven and AI Vessels. Fight across varied terrain and tech levels. Encounter community-built vessels licensed to AI and battle them in various game modes.
+Share your designs with other players or let AI use them in combat. Players can host their own dedicated servers with multiple battle formats running simultaneously. Browse and download community creations via Steam Workshop.

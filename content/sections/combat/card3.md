@@ -1,7 +1,7 @@
 +++
-title = "Design Consequences"
+title = "Maneuverability"
 icon = "diagram-3"
 media = "card3.webm"
 weight = 30
 +++
-Your layout decisions directly affect battlefield outcomes: survivability, reliability, and sustained firepower.
+Your drivetrain layout, weight distribution, and engine placement determine how your vessel handles in combat.

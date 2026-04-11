@@ -1,7 +1,7 @@
 +++
-title = "Critical Internal Hits"
+title = "Firepower"
 icon = "bullseye"
 media = "card2.webm"
 weight = 20
 +++
-A single well-placed shot into an ammo rack or vulnerable internal area can rip a vessel apart.
+A well-placed shot into an ammo rack or engine compartment can rip a vessel apart. Target weak spots for maximum damage.

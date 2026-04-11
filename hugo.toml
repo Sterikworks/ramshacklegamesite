@@ -5,12 +5,11 @@ theme = 'hugo-landing-sections'
 disableKinds = ['section', 'taxonomy']
 
 [author]
-name = 'Ramshackle Games'
+name = 'Mountainous Development LLC'
 
 [params]
-author = 'Ramshackle Games'
-description = "Ramshackle is a multiplayer sandbox game where you design a combat vehicle, or 'Vessel', out of destructible parts and armor, and put it to the test against other player-driven and AI Vessels."
-subtitle = 'Design your vessel. Test it in battle.'
+author = 'Mountainous Development LLC'
+description = 'Ramshackle is a multiplayer sandbox where players design combat vehicles from destructible parts, armor, and internal systems, then test them against other players or AI.'
 favicon = 'logoatlas.ico'
 
 [params.banner]

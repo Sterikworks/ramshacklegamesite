@@ -1,7 +1,7 @@
 +++
-title = "Armor Deflection"
+title = "Armor"
 icon = "shield-check"
 media = "card1.webm"
 weight = 10
 +++
-Correct armor angling improves survivability by redirecting or absorbing incoming rounds.
+Angled armor deflects incoming rounds. Your hull shape and plate thickness directly affect survivability on the battlefield.

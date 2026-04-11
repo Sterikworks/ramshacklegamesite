@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ partial "banner.html" . }}
 {{ partial "steam-widget.html" . }}
+{{ partial "trailer.html" . }}
 {{ partial "highlights.html" . }}
 {{ partial "sections.html" . }}
-{{ partial "about.html" . }}
 {{ if .Site.Params.mastodon.timeline }}
 {{ partial "mastodon-timeline.html" . }}
 {{ end }}

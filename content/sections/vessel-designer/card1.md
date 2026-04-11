@@ -1,7 +1,7 @@
 +++
-title = "Vertex-Based Armor Editor"
+title = "200+ Detailed Parts"
 icon = "bounding-box-circles"
 media = "card1.webm"
 weight = 10
 +++
-Create vessel hulls with an advanced vertex-based editor for precision shaping and custom armor layouts.
+Over 200 detailed parts spanning multiple technology Ranks representing different eras in armored history.

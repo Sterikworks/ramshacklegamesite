@@ -1,7 +1,7 @@
 +++
-title = "Internal Systems Planning"
+title = "Fully Modeled Interiors"
 icon = "gear-wide-connected"
 media = "card2.webm"
 weight = 20
 +++
-Functional modules only work when connected to power and support systems, so internal layout matters as much as outer armor.
+Every vessel features player-made, fully modeled interiors. Internal layout matters—engines, ammo, and drivetrain all need to fit inside your hull.
