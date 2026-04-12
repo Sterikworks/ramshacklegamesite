@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="py-5" style="background: linear-gradient(180deg, #040913 0%, #0b1320 100%); min-height: 55vh; display: flex; align-items: center;">
+  <div class="container text-center text-light">
+    <p class="text-uppercase fw-bold mb-3" style="letter-spacing: 2px; color: #4fb3ff;">Error 404</p>
+    <h1 class="display-5 fw-bold mb-3">This page does not exist</h1>
+    <p class="lead mb-4" style="max-width: 720px; margin: 0 auto; color: #c8d8ea;">
+      The link may be outdated or the page may have moved.
+    </p>
+    <a href="{{ "/" | relURL }}" class="btn btn-primary btn-lg px-4 py-2">Back to home</a>
+  </div>
+</section>
+{{ end }}
