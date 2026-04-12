@@ -13,14 +13,14 @@
             {{ if .Resources.GetMatch "feature.webm" }}
             {{ with .Resources.GetMatch "feature.webm" }}
             <video width="100%" autoplay loop muted playsinline class="card-img-top">
-                <source src="{{ .RelPermalink }}" type="video/webm">
+                <source src="{{ .Permalink }}" type="video/webm">
             </video>
             {{ end }}
             {{ else if .Params.img }}
             {{ with .Resources.Match .Params.img }}
             {{ range . }}
             <img width="100%"
-                 src="{{ .RelPermalink }}"
+                 src="{{ .Permalink }}"
                  class="card-img-top"
                  alt="{{ .Title }}">
             {{ end }}

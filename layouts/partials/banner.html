@@ -4,26 +4,26 @@
   <div id="bannerCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" style="z-index: 0;">
     <div class="carousel-inner h-100">
       <div class="carousel-item active h-100">
-        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner5.png" | relURL }}");'></div>
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner5.png" | absURL }}");'></div>
       </div>
       <div class="carousel-item h-100">
-        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner2.png" | relURL }}");'></div>
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner2.png" | absURL }}");'></div>
       </div>
       <div class="carousel-item h-100">
-        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner4.png" | relURL }}");'></div>
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner4.png" | absURL }}");'></div>
       </div>
       <div class="carousel-item h-100">
-        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner1.png" | relURL }}");'></div>
+        <div class="carousel-img h-100 w-100" style='background-image: linear-gradient(0deg, #040913 0%, rgba(4, 9, 19, 0.4) 100%), url("{{ "images/banner1.png" | absURL }}");'></div>
       </div>
     </div>
   </div>
 
   <div id="banner" class="container-fluid text-white text-center mb-5 position-relative" style="z-index: 2;">
     <h1>
-      <img src='{{ (printf "images/%s" .Site.Params.banner.logo) | relURL }}'
+      <img src='{{ (printf "images/%s" .Site.Params.banner.logo) | absURL }}'
            class="d-none d-lg-inline mb-4"
          alt="{{ .Site.Title }} logo" style="max-height: 270px;">
-      <img src='{{ (printf "images/%s" .Site.Params.banner.logoSmallDevices) | relURL }}'
+      <img src='{{ (printf "images/%s" .Site.Params.banner.logoSmallDevices) | absURL }}'
            class="d-inline d-lg-none mb-4"
          alt="{{ .Site.Title }} small logo" style="max-height: 180px;">
     </h1>

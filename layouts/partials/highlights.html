@@ -14,7 +14,7 @@
           {{ with .Resources.Match .Params.img }}
           {{ range . }}
           <img width="100%"
-               src="{{ .RelPermalink }}"
+            src="{{ .Permalink }}"
                class="card-img-top"
                alt="{{ .Title }}">
           {{ end }}

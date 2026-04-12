@@ -2,11 +2,11 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="{{ (printf "images/%s" .Site.Params.menu.logo) | relURL }}"
+           <img src="{{ (printf "images/%s" .Site.Params.menu.logo) | absURL }}"
              height="40px"
              class="d-none d-lg-block"
              alt="Menu logo">
-        <img src="{{ (printf "images/%s" .Site.Params.menu.logoSmallDevices) | relURL }}"
+           <img src="{{ (printf "images/%s" .Site.Params.menu.logoSmallDevices) | absURL }}"
              height="30px"
              class="d-block d-lg-none"
              alt="Menu small logo">
