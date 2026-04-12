@@ -1,3 +1,3 @@
 +++
-title = "The Game"
+title = "About This Game"
 +++

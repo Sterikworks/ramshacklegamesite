@@ -4,4 +4,4 @@ icon = "bullseye"
 media = "card2.webm"
 weight = 20
 +++
-A well-placed shot into an ammo rack or engine compartment can rip a vessel apart. Target weak spots for maximum damage.
+Penetrating hits into ammo racks or engines can disable or destroy a vessel from the inside.

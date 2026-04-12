@@ -1,9 +1,9 @@
 +++
-title = "Tactical Battle"
-slogan = "Armor, firepower, and maneuverability"
+title = "Unique Roles"
+slogan = "Armor, firepower, mobility, and utility tradeoffs"
 menus = ["sections"]
 weight = 20
-description = "Fight in PvP or PvE battles where armor angle, shot placement, and internal layout determine the outcome."
+description = "Design tradeoffs determine success in battle."
 img = "feature.png"
 +++
-Combat uses simulated ballistics. Angled armor can deflect incoming fire, while penetrating hits into critical components like ammo racks or engines can disable or destroy a vessel from the inside. Balance armor protection, raw firepower, and maneuverability to dominate the battlefield.
+A vessel's tradeoffs between armor, firepower, mobility, and utility will determine its success in battle. Designs range from heavily armored brawlers to paper-thin scouts, and everything in between.

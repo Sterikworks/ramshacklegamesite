@@ -1,7 +1,7 @@
 +++
-title = "Fully Modeled Interiors"
+title = "Modeled Interiors"
 icon = "gear-wide-connected"
 media = "card2.webm"
 weight = 20
 +++
-Every vessel features player-made, fully modeled interiors. Internal layout matters—engines, ammo, and drivetrain all need to fit inside your hull.
+Player-made, fully modeled interiors. Engines, ammo, transmission lines, and drivetrain components all fit inside your hull.

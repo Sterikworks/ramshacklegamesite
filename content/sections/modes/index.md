@@ -1,9 +1,9 @@
 +++
-title = "Game Modes & Community"
-slogan = "PvP, PvE, and player-hosted servers"
+title = "Single-player, Multiplayer"
+slogan = "Battle across terrains and tech levels"
 menus = ["sections"]
 weight = 30
-description = "Multiple battle formats, procedural terrain, dedicated servers, and Steam Workshop integration."
+description = "Fight across different tech levels and opponents."
 img = "feature.png"
 +++
-Battle across multiple game modes catering to different playstyles—Skirmish and Frontline for PvP, Missions and Free Play for PvE. Procedural terrain with prefab points of interest keeps every match fresh. Share your vessel designs on Steam Workshop or host your own dedicated server.
+Battle on a variety of terrains across different "Tech" levels, representing eras of military vehicle development. Engage designs made by other players, operated by those players, or AI opponents.

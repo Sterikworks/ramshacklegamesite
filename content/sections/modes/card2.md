@@ -4,4 +4,4 @@ icon = "people"
 media = "card2.webm"
 weight = 20
 +++
-Host your own dedicated servers with full control. Build a community around your server, just like ARMA or Minecraft.
+Players can host their own dedicated servers. Support for large servers running multiple battles at once.
