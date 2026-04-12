@@ -1,8 +1,12 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.ramshacklegame.com/'
 languageCode = 'en-us'
 title = 'Ramshackle'
 theme = 'hugo-landing-sections'
 disableKinds = ['section', 'taxonomy']
+
+[caches]
+	[caches.images]
+		dir = ':cacheDir/images'
 
 [author]
 name = 'Mountainous Development LLC'
