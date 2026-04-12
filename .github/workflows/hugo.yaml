@@ -74,9 +74,9 @@ jobs:
           echo "Hugo: $(hugo version)"
           echo "Node.js: $(node --version)"
 
-      - name: Install Node.js dependencies
+      - name: Install theme Node.js dependencies
         run: |
-          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
+          [[ -f themes/hugo-landing-sections/package-lock.json || -f themes/hugo-landing-sections/npm-shrinkwrap.json ]] && npm ci --prefix themes/hugo-landing-sections || true
 
       - name: Configure Git
         run: git config core.quotepath false
