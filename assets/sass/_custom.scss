@@ -80,7 +80,8 @@ iframe {
 
 .highlights,
 .sections,
-.about {
+.about,
+.support {
   background: linear-gradient(180deg, #040913 0%, #071021 50%, #040913 100%);
 }
 
@@ -123,37 +124,41 @@ a:hover {
 footer {
   background-color: #02050b;
   border-top: 1px solid #162339;
-  padding: 40px 0 72px;
+  padding: 40px 0;
 }
 
-.support-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  display: flex;
+.support__title {
+  letter-spacing: 3px;
+  color: #4fb3ff;
+}
+
+.support__text {
+  color: #a9bed1;
+  line-height: 1.7;
+  max-width: 42rem;
+}
+
+.support__btn {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 0.6rem;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   background-color: #ff424d;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.3px;
   text-decoration: none;
-  border-top: 1px solid #e53b45;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.support-bar:hover,
-.support-bar:focus {
+.support__btn:hover,
+.support__btn:focus {
   background-color: #e53b45;
   color: #fff;
   text-decoration: none;
+  box-shadow: 0 8px 24px rgba(255, 66, 77, 0.35);
 }
 
-.support-bar__icon {
+.support__btn-icon {
   flex-shrink: 0;
 }
