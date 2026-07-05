@@ -1,24 +1,48 @@
 {{- $support := .Site.Params.support -}}
-{{- if and $support $support.patreonUrl $support.enabled -}}
+{{- $hasPatreon := and $support $support.patreonUrl -}}
+{{- $hasKofi := and $support $support.kofiUrl -}}
+{{- if and $support $support.enabled (or $hasPatreon $hasKofi) -}}
 <div id="support" class="support py-5">
   <div class="container text-center">
     <h2 class="support__title mb-4 fw-bold text-uppercase">Support Us</h2>
-    <a
-      href="{{ $support.patreonUrl }}"
-      class="support__btn"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        src="{{ "images/patreon-logo.svg" | absURL }}"
-        alt=""
-        class="support__btn-icon"
-        width="24"
-        height="24"
-        aria-hidden="true"
+    <div class="support__buttons d-flex flex-wrap justify-content-center gap-3">
+      {{- if $hasPatreon -}}
+      <a
+        href="{{ $support.patreonUrl }}"
+        class="support__btn support__btn--patreon"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-      Support Us on Patreon
-    </a>
+        <img
+          src="{{ "images/patreon-logo.svg" | absURL }}"
+          alt=""
+          class="support__btn-icon"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+        Support Us on Patreon
+      </a>
+      {{- end -}}
+      {{- if $hasKofi -}}
+      <a
+        href="{{ $support.kofiUrl }}"
+        class="support__btn support__btn--kofi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="{{ "images/kofi-logo.svg" | absURL }}"
+          alt=""
+          class="support__btn-icon"
+          width="24"
+          height="24"
+          aria-hidden="true"
+        >
+        Support Us on Ko-fi
+      </a>
+      {{- end -}}
+    </div>
   </div>
 </div>
 {{- end -}}

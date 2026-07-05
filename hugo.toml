@@ -32,6 +32,7 @@ git = 'https://store.steampowered.com/app/3800200/Ramshackle/'
 
 [params.support]
 patreonUrl = 'https://www.patreon.com/cw/MountainousDevelopment'
+kofiUrl = 'https://ko-fi.com/mountainousdevelopment'
 enabled = true
 
 [params.style]

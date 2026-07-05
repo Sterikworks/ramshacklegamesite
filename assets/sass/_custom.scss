@@ -137,7 +137,6 @@ footer {
   align-items: center;
   gap: 0.6rem;
   padding: 0.75rem 1.5rem;
-  background-color: #ff424d;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.3px;
@@ -145,12 +144,28 @@ footer {
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.support__btn:hover,
-.support__btn:focus {
+.support__btn--patreon {
+  background-color: #ff424d;
+}
+
+.support__btn--patreon:hover,
+.support__btn--patreon:focus {
   background-color: #e53b45;
   color: #fff;
   text-decoration: none;
   box-shadow: 0 8px 24px rgba(255, 66, 77, 0.35);
+}
+
+.support__btn--kofi {
+  background-color: #29abe0;
+}
+
+.support__btn--kofi:hover,
+.support__btn--kofi:focus {
+  background-color: #2296c4;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(41, 171, 224, 0.35);
 }
 
 .support__btn-icon {
