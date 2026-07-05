@@ -123,63 +123,37 @@ a:hover {
 footer {
   background-color: #02050b;
   border-top: 1px solid #162339;
-  padding: 40px 0;
+  padding: 40px 0 72px;
 }
 
-.support-modal {
-  background-color: #0b1729;
-  border: 1px solid #1d304b;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 30px rgba(255, 66, 77, 0.15);
-}
-
-.support-modal__title {
-  color: #4fb3ff;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.support-modal__text {
-  color: #a9bed1;
-  line-height: 1.6;
-  max-width: 28rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.support-modal__logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.support-modal__btn-icon {
-  vertical-align: -0.2em;
-}
-
-.btn-patreon {
+.support-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.25rem;
   background-color: #ff424d;
-  border: none;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.3px;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+  border-top: 1px solid #e53b45;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease;
 }
 
-.btn-patreon:hover,
-.btn-patreon:focus {
+.support-bar:hover,
+.support-bar:focus {
   background-color: #e53b45;
   color: #fff;
-  box-shadow: 0 8px 24px rgba(255, 66, 77, 0.35);
-  transform: translateY(-1px);
-}
-
-.support-modal__later {
-  color: #8fa5be;
-  font-size: 0.9rem;
   text-decoration: none;
 }
 
-.support-modal__later:hover {
-  color: #c8d8ea;
-  text-decoration: underline;
+.support-bar__icon {
+  flex-shrink: 0;
 }

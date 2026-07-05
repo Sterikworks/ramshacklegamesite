@@ -32,8 +32,7 @@ git = 'https://store.steampowered.com/app/3800200/Ramshackle/'
 
 [params.support]
 patreonUrl = 'https://www.patreon.com/cw/MountainousDevelopment'
-modalEnabled = true
-modalDelay = 2500
+enabled = true
 
 [params.style]
 fontFamily = 'Trebuchet MS, Segoe UI, Arial, sans-serif'
